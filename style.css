@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.status.pending {
+  background-color: #f9c74f;
+  color: #000;
+}
+
+.status.accepted {
+  background-color: #90be6d;
+  color: #fff;
+}
+
+.status.rejected {
+  background-color: #f94144;
+  color: #fff;
+}
+
+#filter-buttons {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+#filter-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+#filter-buttons button.active {
+  background-color: #333;
+  color: white;
+}
